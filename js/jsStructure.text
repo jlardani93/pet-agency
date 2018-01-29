@@ -1,0 +1,40 @@
+Objects
+	pet(constructor)(name, age, breed, type, bio, imm rec, url img)
+		name:
+		age:
+		gender:
+		breed:
+		Type of Animal:
+		adopted: false;
+		bio:
+		immunization record:
+		image url
+
+		setName()
+		setBreed()
+		setAge()
+		setType()
+		setAdopted()
+
+	administrator
+		pets: []
+		filteredArray: []
+
+		filter(attribute);
+
+addPet(index);
+		removePet(index);
+		setAdopted();
+
+	customer
+		name:
+		address:
+
+		makeDonation(fee)
+		setName()
+		setAddress()
+
+
+Front-End:
+
+complex display functions
