@@ -1,3 +1,21 @@
 #petsContainer, #dogContainer, #catContainer, #cartContainer, #goodbyeContainer {
   display: none;
 }
+
+
+img{
+  height: auto;
+  width: 200px;
+}
+
+
+.col-md-4{
+  padding: 20px;
+}
+
+.petContainer{
+  box-shadow: 0px 0px 15px black;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+}
