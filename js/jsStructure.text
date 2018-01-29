@@ -10,10 +10,8 @@ Objects
 		immunization record:
 		image url
 
-		setName()
-		setBreed()
+		setName(name)
 		setAge()
-		setType()
 		setAdopted()
 
 	administrator
@@ -22,7 +20,7 @@ Objects
 
 		filter(attribute);
 
-addPet(index);
+		addPet();
 		removePet(index);
 		setAdopted();
 
