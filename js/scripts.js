@@ -1,5 +1,36 @@
 
 $(document).ready(function(){
+  function displayPets(attr){
+    $(".petCard").remove();
+    var temp = Administrator.filter(attr);
+    temp.forEach(function(pet){
+      var name = this.name;
+      var age = this.age;
+      var gender = this.gender;
+      var breed = this.breed;
+      var type = this.type;
+      var bio = this.bio;
+      var immRec = this.immRec;
+      var img = this.imgURL;
+
+      $("#animalRow").append('<div class="col-md-4 petCard">' + '
+        <div class="petContainer"> ' + '
+          <h3 class="name">' + name '</h3>' + '
+          <img class="pic" src="'+ imgURL + '">' + '
+          <h4 class="age">' + age + '</h4>' + '
+          <h4 class="gender">' + gender + '</h4>' + '
+          <h4 class="type">' + type + '</h4>' + '
+          <h4 class="breed">' + breed + '</h4>' + '
+          <h4 class="bio">' + bio + '</h4> ' + '
+          <h4 class="immRec">' + immRec + '</h4> ' + '
+        </div>' + '
+      </div>');
+    });
+  };
+
+
+
+
   $("#btnBegin").click(function(){
     $("#petsContainer").show();
     $("#landingPage").hide();
