@@ -1,37 +1,40 @@
 $(document).ready(function(){
   $("#btnBegin").click(function(){
-    $("#petsContainer").toggleClass("hidden");
-    $("#landingPage").toggleClass("hidden");
+    $("#petsContainer").show();
+    $("#landingPage").hide();
   });
   $("#btnDog").click(function(){
-    $("#dogContainer").toggleClass("hidden");
+    $("#dogContainer").show();
+    $("#catContainer").hide();
   });
   $("#btnCat").click(function(){
-    $("#catContainer").toggleClass("hidden");
+    $("#dogContainer").hide();
+    $("#catContainer").show();
   });
   $("#dogForm").submit(function(event){
     event.preventDefault();
-    $("#cartContainer").toggleClass("hidden");
-    $("#dogContainer").toggleClass("hidden");
+    $("#cartContainer").show();
+    $("#dogContainer").hide();
   });
   $("#catForm").submit(function(event){
     event.preventDefault();
-    $("#cartContainer").toggleClass("hidden");
-    $("#catContainer").toggleClass("hidden");
+    $("#cartContainer").show();
+    $("#catContainer").hide();
   });
   $("#confirmForm").submit(function(event){
     event.preventDefault();
-    Customer.name = $("#userName").val();
-    Customer.address = $("#userAddress").val();
-    Customer.phone = $("#userPhone").val();
-    $("#cartContainer").toggleClass("hidden");
-    $("#goodbyeContainer").toggleClass("hidden");
+    // Customer.name = $("#userName").val();
+    // Customer.address = $("#userAddress").val();
+    // Customer.phone = $("#userPhone").val();
+    $("#cartContainer").hide();
+    $("#goodbyeContainer").show();
   });
   $("#btnHome").click(function(){
-    $("#goodbyeContainer").toggleClass("hidden");
-    $("#landingPage").toggleClass("hidden");
-    Customer.name = $("#userName").val("");
-    Customer.address = $("#userAddress").val("");
-    Customer.phone = $("#userPhone").val("");
+    $("#goodbyeContainer").hide();
+    $("#petsContainer").hide();
+    $("#landingPage").show();
+    // Customer.name = $("#userName").val("");
+    // Customer.address = $("#userAddress").val("");
+    // Customer.phone = $("#userPhone").val("");
   });
 });
